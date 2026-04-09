@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Primera versión de Página dedicada a Rentas en el Lago de Atitlan" />
+    <title>Multi Inversiones Atitlan</title>
+    <link rel="stylesheet"
+          href="styles.css" />
+   
+</head>
+<body>
+    <script>
+        window.fbAsyncInit = function () {
+            FB.init({
+                appId: '100070829384786',
+                xfbml: true,
+                version: 'v25.0'
+            });
+        };
+    </script>
+    <header>
+        <a href="index.html">
+            <img src="./multimedia/logo.png" alt="Mi logo" title="Logo MIA" width="100" height="100" />
+        </a>
+        <nav>
+            <a href="index.html">Inicio  </a>
+            <a href="sobreMi.html">Sobre Mi</a>
+            <a href="proyectos.html">Proyectos</a>
+            <a href="galeria.html">Fotos</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+    </header>
+
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script>
+
+    <main>
+        <section>
+            <h2>Será un gusto poder saber de tí</h2>
+            <form action="mailto:salguero.aaron@gmail.com" method="post">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre"
+                       placeholder="Tu nombre" required />
+                <label for="Ape">Apellido</label>
+                <input type="text" id="Ape" name="Apellido" placeholder="Tu 1er. apellido" /> <br /> <br />
+                <label for="email">Correo:</label>
+                <input type="email" id="email" name="email" placeholder="Correo válido" />
+                <label for="Tel">Teléfono</label>
+                <input type="text" id="Tel" name="Telefono" placeholder="####-####" /> <br /> <br />
+                <label for="pais">País:</label>
+                <select id="pais" name="pais">
+                    <option value="GT">Guatemala</option>
+                    <option value="MX">Mexico</option>
+                    <option value="US">Estados Unidos</option>
+                </select>
+                <label>
+                    <input type="checkbox" name="acepto" required />Confirmo que mis datos son reales
+                </label> <br /><br />
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+        <section>
+            <h2>Únete a nuestra Comunidad en Facebook</h2>
+            <a href="https://www.facebook.com/profile.php?id=100070829384786">
+                <img src="./multimedia/fbpage.png" alt="red social facebook" />
+            </a>
+        </section>
+        <footer>
+            <br />
+            <br />
+            <nav>
+                <a href="index.html">Regresar al inicio</a>
+                <a href="contacto.html">Escribime</a>
+            </nav>
+        </footer>
+    </main>
+
+</body>
+</html>
